@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Timings</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="prayer-app">
+      <div class="header">
+        <div class="country">
+          <input type="text" placeholder="Enter The Country" required />
+        </div>
+        <div class="city">
+          <input type="text" placeholder="Enter The City" required />
+        </div>
+        <div class="date">
+          <input type="date" required />
+        </div>
+        <div class="submit">
+          <input type="button" value="Submit Data" />
+        </div>
+      </div>
+      <div class="body">
+        <div class="currentLocation">
+          <span class="country"></span>
+          <span class="city"></span>
+        </div>
+        <div class="current-date">
+          <span class="date">23-3-2-24</span><span class="day">السبت</span>
+        </div>
+        <div class="timings">
+          <div><span>Fajr</span><span class="value-1">04-30 am</span></div>
+          <div><span>Sunrise</span><span class="value-6">04-30 am</span></div>
+          <div><span>Dhuhr</span><span class="value-2">04-30 am</span></div>
+          <div><span>Asr</span><span class="value-3">04-30 am</span></div>
+          <div><span>Maghrib</span><span class="value-4">04-30 am</span></div>
+          <div><span>Isha</span><span class="value-5">04-30 am</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

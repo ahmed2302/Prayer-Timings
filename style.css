@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: url(images/two.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.prayer-app {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.5);
+  transition: 0.5;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+}
+
+.prayer-app .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prayer-app .header > div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.prayer-app .header > div input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.prayer-app .header > div:not(:last-child) input:hover,
+.prayer-app .header > div:not(:last-child) input:focus {
+  border-color: #333;
+}
+
+.prayer-app .header > div:last-child input:hover {
+  border-color: #333;
+}
+
+.prayer-app .header > div input::placeholder {
+  color: #fff;
+}
+
+.prayer-app .body .current-date,
+.prayer-app .body .currentLocation {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prayer-app .body .timings > div {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  font-weight: bold;
+}
