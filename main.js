@@ -32,8 +32,7 @@ function getDate(country, city, date) {
   let year = Number(date.slice(0, 4));
   let month = Number(date.slice(5, 7));
   let day = Number(date.slice(8, 10));
-  axios
-    .get(
+  fetch(
       `http://api.aladhan.com/v1/calendarByCity?method=4&year=${year}&month=${month}&city=${city}&country=${country}`
     )
     .then((response) => {
